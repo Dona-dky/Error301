@@ -315,12 +315,11 @@ button:hover {
 
 #book {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(./images/bg_bottom.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-content: space-between;
 }
 
 .book_content {
@@ -341,15 +340,11 @@ button:hover {
     margin-bottom: 60px;
 }
 
-/* FOOTER */
-footer {
-    background-color: #E7E7EB;
-    text-align: center;
-}
 
 .form_end {
-    background-color: violet;
+    margin-top: 70px;
     width: 100%;
+    text-align: center;
 }
 
 form {
@@ -357,19 +352,17 @@ form {
     display: flex;
     flex-direction: column;
     justify-items: flex-end;
-    /* position: absolute; */
-    /* margin-top: -60px;
-    margin-bottom: 90px; */
 }
 
 .newsletter {
     height: 60px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .newsletter input {
@@ -403,12 +396,10 @@ footer a {
     color: rgb(0, 0, 0);
 }
 
-.footer_content {
-    display: flex;
-    flex-direction: column;
-    padding: 70px;
+/* FOOTER */
+footer {
+    background-color: #E7E7EB;
     text-align: center;
-    margin: 0 auto;
 }
 
 .logo_foot {
@@ -417,6 +408,14 @@ footer a {
 }
 
 .logo_foot img {
+    margin: 0 auto;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    text-align: center;
     margin: 0 auto;
 }
 
