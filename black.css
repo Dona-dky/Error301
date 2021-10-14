@@ -36,6 +36,11 @@ p{
     color: #E57029;
 }
 
+button a{
+    text-decoration: none;
+    color: #E57029;
+}
+
 @media screen and (max-width: 600px) {
 
     h1 {
@@ -587,29 +592,4 @@ footer {
 
 .textmenu ul li a:hover {
     color: #E57029;
-}
-
-/* BUG */
-
-#container{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 3;
-}
-
-#container .show{
-    display: block;
-}
-
-.box{
-    position: absolute;
-    background: #000;
-}
-
-.sndbox{
-    position: absolute;
-    background: #fff;
 }

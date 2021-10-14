@@ -14,22 +14,36 @@
 <!-- defer = charger le(s) script(s) en parallèle, sans stopper le rendu de la page HTML. Donc réduit délai d'affichage -->
 
 <body>
+    <div id="cadena_site">
+        <div class="text">
+            <h1>site vérouillé</h1>
+            <hr>
+            <h2>Pour accéder au site, renseignez le mot de passe. <br>
+            Vous l'avez vu mais pas regardé...</h2>
+            <div class="button_error">
+                <input type="text" name="" id="">
+                <button>Entrer</button>
+            </div>
+
+        </div>
+    </div>
+
     <div id="container"></div>
 
     <div class="menu" id="burgermenu">
         <div class="textmenu">
             <ul>
                 <li>
-                    <a href="#whoweare" onClick="document.location.reload(true)" title="Nous">Qui sommes-nous ?</a>
+                    <a href="#whoweare" onclick="redirection()" title="Nous">Qui sommes-nous ?</a>
                 </li>
                 <li>
-                    <a href="#univers" title="Univers">Univers</a>
+                    <a href="#univers" onclick="redirection()" title="Univers">Univers</a>
                 </li>
                 <li>
-                    <a href="#experience" title="Expérience">Expérience</a>
+                    <a href="#experience" onclick="redirection()" title="Expérience">Expérience</a>
                 </li>
                 <li>
-                    <a href="#book" title="Réserver">Réserver</a>
+                    <a href="#book" onclick="redirection()" title="Réserver">Réserver</a>
                 </li>
             </ul>
         </div>

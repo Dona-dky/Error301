@@ -93,3 +93,12 @@ function myBug() {
     }, 3500);
 
 }
+
+// REDIRECTION MENU BURGER
+
+function redirection(){
+    // setTimeout(location.reload.bind(location), 600);
+    setTimeout(function(){
+        window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
+    },10); //delayTime should be written in milliseconds e.g. 1000 which equals 1 second
+}

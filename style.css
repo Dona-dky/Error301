@@ -589,10 +589,25 @@ footer {
 
 .box{
     position: absolute;
-    background: #000;
+    background: #191919;
 }
 
 .sndbox{
     position: absolute;
     background: #fff;
 }
+
+/* SITE BLOQUE */
+
+#cadena_site{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+/* #container .show{
+    display: block;
+} */
