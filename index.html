@@ -1,14 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Dona DENKEY DANDJEIN" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/icp2pau.css">
     <link rel="stylesheet" href="style.css">
-    <title>Error 301</title>
+    <title>Escape 301</title>
 </head>
+<script src="./js/script.js" defer></script>
+<!-- defer = charger le(s) script(s) en parallèle, sans stopper le rendu de la page HTML. Donc réduit délai d'affichage -->
+
 <body>
-    <h1>Error error error</h1>
+    <div id="container"></div>
+
+    <div class="menu" id="burgermenu">
+        <div class="textmenu">
+            <ul>
+                <li>
+                    <a href="#whoweare" title="Nous">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a href="#univers" title="Univers">Univers</a>
+                </li>
+                <li>
+                    <a href="#experience" title="Expérience">Expérience</a>
+                </li>
+                <li>
+                    <a href="#book" title="Réserver">Réserver</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="popuptext" id="myPopup">
+        <div class="text">
+            <h1>Enigme</h1>
+            <hr>
+            <h2>Pour poursuivre la redirection, <br> cliquez sur le bouton gauche</h2>
+            <div class="button_error">
+                <button onclick="myBug(); showBug()">Droite</button>
+                <button onclick="myBug(); showBug()">Gauche</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+        <nav>
+            <a href="" title="Retour a l'accueil">
+                <img src="images/logo.png" alt="Logo Error 301">
+            </a>
+
+            <div class="mainMenu" onclick="myAnimation(this); myBurgerFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+
+        <div class="begin">
+            <div class="img_header">
+                <div><img id="bigLogo" src="./images/biglogo.png" alt="big logo"></div>
+                <div id="div_img"><img id="oran_rec" src="./images/Rectangle_orange.png" alt="orange reblong"></div>
+            </div>
+            <h1><span>escape-301™</span></h1>
+            <hr>
+            <h2>Plonge au coeur d’une expérience unique, dans un monde nouveau avec escape-301™. <br>
+                l’escape game, réinventé.
+            </h2>
+            <button onclick="myPopUp()" class="buttonPopup">Je réserve</button>
+        </div>
+
+    </header>
+
+    <section id="whoweare" class="">
+        <div>
+            <div class="wwe_h1">
+                <h1><span>Qui sommes-nous ?</span></h1>
+                <div class="wwe_hr">
+                    <hr>
+                </div>
+
+            </div>
+
+            <div class="wwe_text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sed doloribus voluptatem adipisci earum velit vel fugit
+                    modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                    ut harum impedit molestias. Fugit, possimus?</p>
+            </div>
+        </div>
+        <img src="./images/croix.png" alt="3croix">
+    </section>
+
+    <section id="univers">
+        <h1>Un univers <br> Hors du commun</h1>
+        <div class="univers_content">
+
+            <div class="univers_text">
+                <div class="univers_part">
+                    <img src="./images/img.png" alt="door">
+                </div>
+                <div class="univers_part_two">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed doloribus voluptatem adipisci earum velit vel fugit
+                        modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                        ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Sed doloribus voluptatem adipisci earum velit vel fugit
+                        modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                        ut harum impedit molestias. Fugit, possimus?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Sed doloribus voluptatem adipisci earum velit vel fugit
+                        modi ipsam maxime excepturi a numquam, reprehenderit veniam
+                        ut harum impedit molestias. Fugit, possimus?</p>
+
+                </div>
+            </div>
+            <div class="flexend_img">
+                <img src="./images/orange_line.png" alt="orange_line">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience">
+
+        <div class="ex_h1">
+            <div class="ex_img"><img src="./images/Rectangle.png" alt="rectangle_rayé"></div>
+            <h1>Une expérience unique</h1>
+        </div>
+
+        <div class="ex_content">
+            <div class="ex_elements">
+
+                <div class="course">
+                    <div class="course_img"><img src="./images/search.png" alt="search"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus voluptatem adipisci earum
+                        velit vel fugit modi ipsam maxime excepturi a numquam, reprehenderit veniam ut harum impedit
+                        molestias. Fugit, possimus?</p>
+                </div>
+
+                <div class="course">
+                    <div class="course_img"><img src="./images/psychology.png" alt="psychology"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus voluptatem adipisci earum
+                        velit vel fugit modi ipsam maxime excepturi a numquam, reprehenderit veniam ut harum impedit
+                        molestias. Fugit, possimus?</p>
+                </div>
+
+                <div class="course">
+                    <div class="course_img"><img src="./images/run.png" alt="course"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus voluptatem adipisci earum
+                        velit vel fugit modi ipsam maxime excepturi a numquam, reprehenderit veniam ut harum impedit
+                        molestias. Fugit, possimus?</p>
+                </div>
+
+            </div>
+
+            <div class="ex_img_end">
+                <img src="./images/white_line.png" alt="white_line">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="book">
+        <div class="book_content">
+            <h1>Tente l'expérience <br>dès maintenant</h1>
+            <button onclick="myPopUp()" class="buttonPopup">Je réserve</button>
+        </div>
+
+        <div class="form_end">
+            <form action="">
+                <h3>Abonne toi à la newsletter</h3>
+
+                <div class="newsletter">
+                    <input type="search" id="site-search" name="q" aria-label="Search through site content"
+                        placeholder="Email">
+
+                    <button class="btn_news">S'abonner</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="footer_content">
+            <div class="logo_foot"><img src="./images/footer_logo.png" alt=""></div>
+            <div class="footer_links">
+                <a href="">Conditions d'utilisation</a>
+                <a href="">Mentions légales</a>
+                <a href="">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer_logos">
+                <a href=""><img src="./images/facebook.png" alt="fb_logo"></a>
+                <a href=""><img src="./images/instagram.png" alt="insta_logo"></a>
+                <a href=""><img src="./images/twitter.png" alt="twitter_logo"></a>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
