@@ -15,18 +15,25 @@ li {
     font-family: pirulen, sans-serif;
     font-weight: 700;
     font-size: 35px;
+    color: #E57029;
 }
 
 h2 {
     font-family: pirulen, sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #E57029;
 }
 
 h3 {
     font-family: pirulen, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #E57029;
+}
+
+p{
+    color: #E57029;
 }
 
 @media screen and (max-width: 600px) {
@@ -83,7 +90,7 @@ img {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(./images/bg_top.png);
+    background-image: url(./images/dark/bg_top.png);
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
@@ -127,6 +134,7 @@ nav {
 .begin hr {
     color: #E57029;
     background-color: #E57029;
+    border: none;
     margin: 10px 0 35px;
     width: 450px;
     max-width: 100%;
@@ -150,17 +158,18 @@ button {
     font-weight: 300;
     font-style: normal;
     cursor: pointer;
+    color: #E57029;
 }
 
 button:hover {
-    background-color: #E57029;
-    color: white;
+    background-color: white;
+    color: #E57029;;
 }
 
 /* WHO WE ARE */
 
 #whoweare {
-    background-color: #E7E7EB;
+    background-color: #1D1D1B;
     padding: 60px 100px;
 }
 
@@ -185,6 +194,7 @@ button:hover {
 .wwe_h1 hr {
     color: #E57029;
     background-color: #E57029;
+    border: none;
     width: 300px;
     max-width: 100%;
     height: 2px;
@@ -199,7 +209,7 @@ button:hover {
 
 #univers {
     padding: 60px 60px 0;
-    background-color: #F2F3F8;
+    background-color: #191919;
 }
 
 .univers_content {
@@ -219,6 +229,7 @@ button:hover {
     height: auto;
     padding-left: 50px;
     margin-bottom: 40px;
+    color: #E57029;
 }
 
 .univers_text {
@@ -267,7 +278,7 @@ button:hover {
 }
 
 .ex_h1 h1 {
-    color: white;
+    color: #191919;
     margin-left: 20px;
 }
 
@@ -304,6 +315,10 @@ button:hover {
     margin: 0 auto 20px;
 }
 
+.course p{
+    color: #191919;
+}
+
 .ex_img_end {
     display: flex;
     flex-direction: column;
@@ -316,7 +331,7 @@ button:hover {
 #book {
     width: 100%;
     height: 90vh;
-    background-image: url(./images/bg_bottom.png);
+    background-image: url(./images/dark/bg_bottom.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -368,11 +383,13 @@ h3 {
 
 .newsletter input {
     width: 380px;
-    border: 3px solid white;
+    border: 3px solid #3B3B38;
     border-right: none;
     padding: 5px;
     height: 100%;
     outline: none;
+    color: #E57029;
+    background-color: #3B3B38;
 }
 
 .newsletter button,
@@ -385,7 +402,8 @@ footer a {
 .newsletter button {
     height: 100%;
     background-color: #E57029;
-    color: white;
+    color: #3B3B38;
+    text-transform: uppercase;
 }
 
 .newsletter button:hover {
@@ -394,12 +412,12 @@ footer a {
 }
 
 ::placeholder {
-    color: rgb(0, 0, 0);
+    color: #E57029;
 }
 
 /* FOOTER */
 footer {
-    background-color: #E7E7EB;
+    background-color: #1D1D1B;
     text-align: center;
 }
 
@@ -432,7 +450,7 @@ footer {
 
 .footer_links a {
     text-decoration: none;
-    color: #000;
+    color: #E57029;
 }
 
 .footer_logos {
@@ -498,7 +516,7 @@ footer {
 .bar3 {
     width: 35px;
     height: 3px;
-    background-color: #333;
+    background-color: #E57029;
     margin: 5px 0;
     transition: 0.4s;
 }
