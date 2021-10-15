@@ -14,6 +14,7 @@
 <!-- defer = charger le(s) script(s) en parallèle, sans stopper le rendu de la page HTML. Donc réduit délai d'affichage -->
 
 <body>
+
     <div class="menu" id="burgermenu">
         <div class="textmenu">
             <ul>
@@ -30,9 +31,21 @@
                     <a href="#book" onclick="redirection()" title="Réserver">Réserver</a>
                 </li>
                 <li>
-                    <a href="" title="?????">?????</a>
+                    <a href="" onclick="endgame()" title="?????">?????</a>
                 </li>
             </ul>
+        </div>
+        
+        <div class="popupwin" id="winorloose">
+            <div class="text">
+                <h1>Entrez le code</h1>
+                <hr>
+                <!-- <form name="formulaire" class="button_error"> -->
+                    <input type="text" name="passwordwin" id="passwordwin">
+                    <button onclick="verif_win()" id="but">Entrer</button>
+                <!-- </form> -->
+
+            </div>
         </div>
     </div>
 
@@ -74,7 +87,7 @@
                 l’escape game, réinventé.
             </h2>
             <!-- <button class="buttonPopup" type="submit" onclick="window.open('biglogo.png')">Je réserve</button> -->
-            <button><a href="https://drive.google.com/drive/folders/16IsuBV4CpMFHYjOfcnnc9IBdmK9ZW2eS" target="_blank" rel="noopener noreferrer">Je réserve</a></button>
+            <button><a href="https://drive.google.com/drive/folders/1pIzztj5kYmpF5o2IEa_uIz9Pgt7bTsz9" target="_blank" rel="noopener noreferrer">Je réserve</a></button>
         </div>
 
     </header>

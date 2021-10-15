@@ -593,3 +593,54 @@ footer {
 .textmenu ul li a:hover {
     color: #E57029;
 }
+
+
+/* POPUP */
+
+.popupwin {
+    /* visibility: hidden; */
+    display: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    z-index: 3;
+}
+
+/* .maybewin {
+    display: block;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    z-index: 3;
+} */
+
+.popupwin .text {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    max-width: 100%;
+}
+
+.popupwin hr {
+    color: #E57029;
+    background-color: #E57029;
+    margin: 28px auto 40px;
+    height: 2px;
+}
+
+.popupwin button {
+    padding: 14px 70px;
+}

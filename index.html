@@ -14,16 +14,16 @@
 <!-- defer = charger le(s) script(s) en parallèle, sans stopper le rendu de la page HTML. Donc réduit délai d'affichage -->
 
 <body>
-    <div id="cadena_site">
+    <div id="cadenas_site">
         <div class="text">
             <h1>site vérouillé</h1>
             <hr>
             <h2>Pour accéder au site, renseignez le mot de passe. <br>
-            Vous l'avez vu mais pas regardé...</h2>
-            <div class="button_error">
-                <input type="text" name="" id="">
-                <button>Entrer</button>
-            </div>
+                Vous l'avez vu mais pas regardé...</h2>
+            <!-- <form name="formulaire" class="button_error"> -->
+                <input type="text" name="password" id="password">
+                <button onclick="verif_pass()" id="but">Entrer</button>
+            <!-- </form> -->
 
         </div>
     </div>
@@ -70,9 +70,9 @@
             </a>
 
             <div class="mainMenu" onclick="myAnimation(this); myBurgerFunction()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                <div class="bar1" id="bar1"></div>
+                <div class="bar2" id="bar2"></div>
+                <div class="bar3" id="bar3"></div>
             </div>
         </nav>
 
@@ -239,5 +239,40 @@
     </footer>
 
 </body>
+<script>
+    
+    // function verif_pass(){
+    //     var div = document.getElementById("cadenas_site");
+    //       div.style.display = "none";
+    // }
 
+    function verif_pass(){
+
+// on place les saisies dans des variables pour plus de commodité
+code1 = document.formulaire.password.value;
+code2 = "3rr0r Eoi";
+
+// si les deux saisies sont différentes :
+if ( code1 != "3rr0r Eoi" ) {
+window.alert('Vous n\'avez pas saisi le même mot de passe !');
+return false;
+}
+
+// si elles ne sont pas différentes (si elles sont identiques en fait ;-)
+else {
+//window.alert('C\'est bon, les deux mots de passe sont identiques');
+// return true;
+// console.log("yas");
+
+var div = document.getElementById("cadenas_site");
+          div.style.display = "none";
+// document.getElementById('cadenas_site').style.display = "none";
+// document.getElementById('but').style.visibility = "hidden";
+
+// var verif = document.getElementById("site");
+// verif.classList.toggle("hidesiite");
+}}
+    </script>
+
+    
 </html>

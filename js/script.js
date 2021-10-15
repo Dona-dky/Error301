@@ -2,7 +2,6 @@
 function myAnimation(x) {
     x.classList.toggle("animate");
 }
-// prompt('Avez-vous obtenu un code sur le jeu ? Si oui, lequel ?');
 
 function myBurgerFunction() {
     var menu = document.getElementById("burgermenu");
@@ -97,8 +96,45 @@ function myBug() {
 // REDIRECTION MENU BURGER
 
 function redirection(){
+    // var refreshmenu = document.getElementsByClassName("mainMenu");
+    
     // setTimeout(location.reload.bind(location), 600);
     setTimeout(function(){
-        window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
-    },10); //delayTime should be written in milliseconds e.g. 1000 which equals 1 second
+        // refreshmenu.classList.appendChild("animate");
+            var refreshmenu = document.getElementById("bar1");
+            refreshmenu.classList = "closebar1";
+
+            
+            var refreshmenu = document.getElementById("bar2");
+            refreshmenu.classList = "closebar2";
+
+            
+            var refreshmenu = document.getElementById("bar3");
+            refreshmenu.classList = "closebar3";
+
+            var refreshburger = document.getElementById("burgermenu");
+
+            refreshburger.classList += "close";
+        // you can pass true to reload function to ignore the client cache and reload from the server
+    },0); //delayTime should be written in milliseconds e.g. 1000 which equals 1 second
+}
+
+function verif_pass(){
+
+    // on place les saisies dans des variables pour plus de commodité
+    var verif = document.getElementById("password");
+    code1 = verif.value;
+    code2 = "3rr0r Eoi";
+    
+    // si les deux saisies sont différentes :
+    if ( code1 != "3rr0r Eoi" ) {
+    window.alert('Vous n\'avez pas saisi le même mot de passe !');
+    return false;
+    }
+    
+    // si elles sont identiques
+    else {
+        var byepass = document.getElementById("cadenas_site");
+        byepass.style.display = "none";
+    }
 }
