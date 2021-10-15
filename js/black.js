@@ -34,7 +34,7 @@ function endgame() {
         // wiin.classList = "maybewin";
         // document.getElementById('textmenu').style.display = "none";
         prompt("Entrez le code");
-        window.alert('Félicitation, venez découvrir notre escape game 301 à Paris en plus de votre nouveau code promo : 5RF548');
+        window.alert('Félicitation ! Venez découvrir Escape game 301 (à 7 rue Auber 75009, PARIS) avec votre code promo : 5RF548. Votre identifiant exclusif : GLI301');
 
         // document.getElementById('winorloose').style.visibility = "visible";
 }
