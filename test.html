@@ -15,23 +15,34 @@
 
 <body>
 
+    <div class="popuptext" id="myPopup">
+        <div class="text">
+            <h1>Entrez le code</h1>
+            <hr>
+            <input type="password" name="passwordwin" id="passwordwin">
+            <button type="submit" onclick="verif_win()">Entrer</button>
+
+        </div>
+
+    </div>
+
     <div class="menu" id="burgermenu">
         <div class="textmenu">
             <ul>
                 <li>
-                    <a href="#whoweare" onclick="redirection()" title="Nous">Qui sommes-nous ?</a>
+                    <a href="#whoweare" class="a_menu" onclick="redirection()" title="Nous">Qui sommes-nous ?</a>
                 </li>
                 <li>
-                    <a href="#univers" onclick="redirection()" title="Univers">Univers</a>
+                    <a href="#univers" class="a_menu" onclick="redirection()" title="Univers">Univers</a>
                 </li>
                 <li>
-                    <a href="#experience" onclick="redirection()" title="Expérience">Expérience</a>
+                    <a href="#experience" class="a_menu" onclick="redirection()" title="Expérience">Expérience</a>
                 </li>
                 <li>
-                    <a href="#book" onclick="redirection()" title="Réserver">Réserver</a>
+                    <a href="#book" class="a_menu" onclick="redirection()" title="Réserver">Réserver</a>
                 </li>
                 <li>
-                    <a href="" onclick="endgame()" title="?????">?????</a>
+                    <button id="to_win" onclick="myPopUp()" title="?????">?????</button>
                 </li>
             </ul>
         </div>

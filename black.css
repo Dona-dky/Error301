@@ -582,7 +582,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.textmenu ul li a {
+.textmenu ul li a , #to_win{
     color: #000;
     text-decoration: none;
     font-size: 35px;
@@ -597,8 +597,7 @@ footer {
 
 /* POPUP */
 
-.popupwin {
-    /* visibility: hidden; */
+.popuptext {
     display: none;
     text-align: center;
     position: fixed;
@@ -611,20 +610,7 @@ footer {
     z-index: 3;
 }
 
-/* .maybewin {
-    display: block;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backdrop-filter: blur(8px);
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    z-index: 3;
-} */
-
-.popupwin .text {
+.popuptext .text {
     position: relative;
     display: block;
     margin: 0 auto;
@@ -634,13 +620,17 @@ footer {
     max-width: 100%;
 }
 
-.popupwin hr {
+.popuptext .text hr {
     color: #E57029;
     background-color: #E57029;
     margin: 28px auto 40px;
     height: 2px;
 }
 
-.popupwin button {
+.button_error button {
     padding: 14px 70px;
+}
+
+.move{
+    display: none;
 }
